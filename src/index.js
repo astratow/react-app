@@ -11,8 +11,18 @@ import ReactDom from 'react-dom';
 
 
 function Greeting(){
-  return <h4>this is Artur and this is my first component</h4>;
+  return  <div>
+            <Hello />
+            <Message />
+          </div>;
 }
+
+const Hello = () => <h2>Hello World!</h2>;
+const Message = () => <p>This is a Text!</p>
+
+/*const Greeting = () => {
+  return React.createElement('h1', {}, 'hello world');
+};*/
 
 
 
